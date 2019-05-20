@@ -1,3 +1,5 @@
+require pry
+
 class Song
   attr_accessor :name, :artist, :genre
   @@count = 0
@@ -24,4 +26,9 @@ class Song
   def self.artists
     @@artists.uniq
   end
+
+  def self.genre_count
+    genre_hash = {}
+    @@genres.each do |genre|
+      binding.pry
 end
