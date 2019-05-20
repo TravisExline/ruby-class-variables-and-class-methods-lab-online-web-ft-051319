@@ -10,4 +10,14 @@ class Song
     @genre = new_genre
     @@count += 1
   end
+
+  def self.count
+    @@count
+  end
+
+  def self.genres
+  end
+
+  def self.artists
+  end
 end
